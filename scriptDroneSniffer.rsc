@@ -8,14 +8,14 @@
       :local ifaceComment [/interface wifi get $i comment];
       #:log info "Interface: $ifaceName, Comment: $ifaceComment" 
 
-      :if ($ifaceName = $ifaceBand2Ghz) do={
+      :if ($ifaceName = $ifaceBand2Ghz ) do={
           :local snifferJobsWifi24Ghz [:len [/system script job find where trace~"scheduler:schedulerDroneSniffer/script:scriptDroneSniffer/script:scriptDroneSniffer2.4Ghz"]]
           #:log info "Number of current wifisniffer 2.4Ghz command jobs: $snifferJobsWifi24Ghz"
 
           :if ($ifaceComment = "drone" && $snifferJobsWifi24Ghz > 0) do={
               #:log info "wifisniffer command already running"
 
-              /system script run "DroneSnifferSetChannel2.4Ghz"
+              /system script run "scriptDroneSnifferSetChannel2.4Ghz"
 
               
           }
@@ -42,7 +42,7 @@
           :if ($ifaceComment = "drone" && $snifferJobsWifi5Ghz > 0) do={
               #:log info "wifisniffer command already running"
 
-              /system script run "DroneSnifferSetChannel5Ghz"
+              /system script run "scriptDroneSnifferSetChannel5Ghz"
           }
 
           :if ($ifaceComment = "drone" && $snifferJobsWifi5Ghz = 0) do={
