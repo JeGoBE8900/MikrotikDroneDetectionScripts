@@ -36,7 +36,7 @@
     :local currentChannel [/interface wifi get $ifaceBand2Ghz channel.frequency];
 
     :if ($currentChannel != $selectedValue && "Unknown" != $selectedValue) do={
-        :log info "Rolled: $selectedValue (Weight: $weight, Probability: $finalChance %)";
+        #:log info "Rolled: $selectedValue (Weight: $weight, Probability: $finalChance %)";
         /interface wifi set $ifaceBand2Ghz channel.frequency=$selectedValue 
         #:log info [/interface wifi get $ifaceBand2Ghz channel.frequency];
     }

@@ -1,3 +1,9 @@
 {
-    /interface/wifi/sniffer wifi1 stream-address=192.168.10.32 stream-rate=4294967295 duration=5 without-paging freeze-frame-interval=1s show-frame=radiotap
+ #variables to configure
+  :local streamIP 192.168.10.32
+  :local wifiInterface "wifi1"
+
+  #end variables to configure
+
+    /interface/wifi sniffer $wifiInterface duration=0 stream-rate=4294967295 stream-address=$streamIP filter="type == 0 && subtype == 8"
 }
