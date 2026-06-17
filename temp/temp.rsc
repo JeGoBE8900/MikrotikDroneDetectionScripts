@@ -37,3 +37,13 @@
  /system/script/job/remove 2
 
 
+:log info [/system/scheduler get schedulerDroneSniffer disabled];
+
+:local ifaceBand2Ghz [/interface/wifi/radio get [find bands~"2ghz"] interface]
+:local ifaceBand5Ghz [/interface/wifi/radio get [find bands~"5ghz"] interface]
+
+:local countryChannel [/interface wifi get $i configuration.country];
+
+:if ($countryChannel = "Brazil") do={
+       /interface wifi unset $ifaceName configuration.country 
+}
