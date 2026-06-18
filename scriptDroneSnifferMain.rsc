@@ -16,7 +16,7 @@
       :local countryChannel [/interface wifi get $i configuration.country];
 
 
-      :log info "Interface: $ifaceName, Comment: $ifaceComment, Manager: $ifaceManager, Mode: $ifaceMode, Country: $countryChannel" 
+      #:log info "Interface: $ifaceName, Comment: $ifaceComment, Manager: $ifaceManager, Mode: $ifaceMode, Country: $countryChannel" 
 
       :if ($ifaceName = $ifaceBand2Ghz ) do={
           :local snifferJobsWifi24Ghz [:len [/system script job find where trace~"scheduler:schedulerDroneSniffer/script:scriptDroneSnifferMain/script:scriptDroneSniffer2.4Ghz"]]
