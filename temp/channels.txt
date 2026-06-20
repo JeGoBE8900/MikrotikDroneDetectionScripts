@@ -1,0 +1,43 @@
+add band=2ghz-b/g/n frequency=2412 name=CH1
+add band=2ghz-b/g/n frequency=2417 name=CH2
+add band=2ghz-b/g/n frequency=2422 name=CH3
+add band=2ghz-b/g/n frequency=2427 name=CH4
+add band=2ghz-b/g/n frequency=2432 name=CH5
+add band=2ghz-b/g/n frequency=2437 name=CH6
+add band=2ghz-b/g/n frequency=2442 name=CH7
+add band=2ghz-b/g/n frequency=2447 name=CH8
+add band=2ghz-b/g/n frequency=2452 name=CH9
+add band=2ghz-b/g/n frequency=2457 name=CH10
+add band=2ghz-b/g/n frequency=2462 name=CH11
+add band=2ghz-b/g/n frequency=2467 name=CH12
+add band=2ghz-b/g/n frequency=2472 name=CH13
+add frequency=2412,2432,2452,2472 name="2Ghz AUTO (1, 5, 9, 13)"
+add band=5ghz-a/n/ac frequency=5180 name=CH36-indoor
+add band=5ghz-a/n/ac frequency=5200 name=CH40-indoor
+add band=5ghz-a/n/ac frequency=5220 name=CH44-indoor
+add band=5ghz-a/n/ac frequency=5240 name=CH48-indoor
+add band=5ghz-a/n/ac frequency=5260 name="CH52-indoor DFS"
+add band=5ghz-a/n/ac frequency=5280 name="CH56-indoor DFS"
+add band=5ghz-a/n/ac frequency=5300 name="CH60-indoor DFS"
+add band=5ghz-a/n/ac frequency=5320 name="CH64-indoor DFS"
+add band=5ghz-a/n/ac frequency=5500 name="CH100 DFS"
+add band=5ghz-a/n/ac frequency=5520 name="CH104 DFS"
+add band=5ghz-a/n/ac frequency=5540 name="CH108 DFS"
+add band=5ghz-a/n/ac frequency=5560 name="CH112 DFS"
+add band=5ghz-a/n/ac frequency=5580 name="CH116 DFS"
+add band=5ghz-a/n/ac frequency=5600 name="CH120 DFS"
+add band=5ghz-a/n/ac frequency=5620 name="CH124 DFS"
+add band=5ghz-a/n/ac frequency=5640 name="CH128 DFS"
+add band=5ghz-a/n/ac frequency=5660 name="CH132 DFS"
+add band=5ghz-a/n/ac frequency=5680 name="CH136 DFS"
+add band=5ghz-a/n/ac frequency=5700 name="CH140 DFS"
+add band=5ghz-a/n/ac frequency=5720 name="CH144 DFS XX"
+add band=5ghz-a/n/ac frequency=5745 name="CH149 XX"
+add band=5ghz-a/n/ac frequency=5765 name="CH153 XX"
+add band=5ghz-a/n/ac frequency=5785 name="CH157 XX"
+add band=5ghz-a/n/ac frequency=5805 name="CH161 XX"
+add band=5ghz-a/n/ac frequency=5825 name="CH165 XX"
+add frequency=5180,5200,5220,5240,5260,5280,5300,5320,5500,5520,5540,5560,5580,5600,5620,5640,5660,5680,5700,5720,5745,5765,5785,5805,5825 name="5GHz AUTO XX"
+add comment="USE THIS LIST" frequency=5180,5200,5220,5240,5260,5280,5300,5320,5500,5520,5540,5560,5580,5600,5620,5640,5660,5680,5700 name="5GHz AUTO ETSI"
+add frequency=5500,5520,5540,5560,5580,5600,5620,5640,5660,5680,5700,5745,5765,5785,5805,5825 name="5GHz AUTO EXTERAL"
+add frequency=5180,5200,5220,5240,5260,5280,5300,5320 name="5GHz AUTO INDOOR"

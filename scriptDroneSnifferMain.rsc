@@ -25,7 +25,7 @@
           :if ($ifaceComment = "drone" && $snifferJobsWifi24Ghz > 0 && $ifaceManager = "local" && $ifaceMode = "ap") do={
               #:log info "wifisniffer command already running"
 
-              :if ($channelHop = 1 || $channelHop = true || $channelHop = "true") do={
+              :if ($channelHop = 1 || $channelHop = true || $channelHop = "true" || $channelHop = "1") do={
                     /system script run "scriptDroneSnifferSetChannelHop2.4Ghz"
               } else={
                     /system script run "scriptDroneSnifferSetChannelFixed2.4Ghz"
@@ -60,9 +60,9 @@
           #:log info "Number of current wifisniffer 5Ghz command jobs: $snifferJobsWifi5Ghz"
 
           :if ($ifaceComment = "drone" && $snifferJobsWifi5Ghz > 0 && $ifaceManager = "local" && $ifaceMode = "ap") do={
-              #:log info "wifisniffer command already running"
+               #:log info "wifisniffer 5Gzcommand already running"
 
-                :if ($channelHop = 1 || $channelHop = true || $channelHop = "true") do={
+                :if ($channelHop = 1 || $channelHop = true || $channelHop = "true" || $channelHop = "1") do={
                     /system script run "scriptDroneSnifferSetChannelHop5Ghz"
                 } else={
                     /system script run "scriptDroneSnifferSetChannelFixed5Ghz"

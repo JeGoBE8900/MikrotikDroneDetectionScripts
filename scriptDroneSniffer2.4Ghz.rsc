@@ -1,6 +1,7 @@
 {
  #variables to configure
-  :local streamIP 192.168.10.32
+  #:local streamIP 192.168.10.32
+  :local streamIP 192.168.10.86
 
   #end variables to configure
     :local ifaceBand2Ghz [/interface/wifi/radio get [find bands~"2ghz"] interface]
