@@ -2,6 +2,7 @@
 Mikrotik RouterOS scripts, to snif wifi packets for Drones and forward them to droneaware.io node device
 
 Tested with 7.23, 7.24 beta & 7.25 alpha
+Used Wireshark to monitor packets from AP device.
 
 Proof of concept, current findings:
 - EU/US Regularity differences (Set country to Brazil)
